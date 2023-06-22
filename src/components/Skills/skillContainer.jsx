@@ -1,12 +1,13 @@
 import React from 'react';
+import {motion} from "framer-motion"
 
 const SkillContainer = ({name,src}) => {
 
   return (
-    <div className='skill-con'>
+    <motion.div whileHover={{scale:1.2}} className='skill-con'>
     <img src={src} alt="" />
     <h4 className="skill_name">{name}</h4>
-</div>
+</motion.div>
   )
 }
 
