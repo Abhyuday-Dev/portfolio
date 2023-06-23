@@ -1,4 +1,5 @@
 import React from "react";
+import {motion} from "framer-motion";
 
 const Data = () => {
   return (
@@ -60,9 +61,13 @@ const Data = () => {
         passionate and creative about my work.
       </p>
 
-     <div className="home__button"> <a href="" >
+     <motion.div className="home__button"  whileHover={{
+              scale: 1.1,
+              textShadow: "0px 0px 8px rgb(255,255,255)",
+              cursor: "pointer",
+            }}> <motion.a href="#contact" whileHover={{scale: 1.1,}} >
         Say Hello
-      </a></div>
+      </motion.a></motion.div>
     </div>
   );
 };

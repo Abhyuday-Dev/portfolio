@@ -6,48 +6,37 @@ import { useInView } from "react-intersection-observer";
 const About = () => {
   const controls = useAnimation();
   const imgAnimation = useAnimation();
-  const [titleRef, titleInView] = useInView();
-  const [textRef, textInView] = useInView();
+  const textAnimation = useAnimation();
+  const [ref, inView] = useInView();
 
   useEffect(() => {
-    if (titleInView) {
+    if (inView) {
       controls.start({
+        opacity: 1,
+        scale: 1,
+        transition: { type: "spring", duration: 2 },
+      });
+      imgAnimation.start({
         opacity: 1,
         x: 0,
-        transition: { type: "spring", duration: 2 },
+        transition: { type: "tween", duration: 1.2, delay: 0.1 },
       });
-      imgAnimation.start({
-        scale: 1,
+      textAnimation.start({
         opacity: 1,
-        transition: { type: "spring", duration: 2 },
+        x: 0,
+        transition: { type: "tween", duration: 1.2, delay: 0.1 },
       });
+    } else {
+      controls.start({ opacity: 0.5, scale: 0.6 });
+      imgAnimation.start({ x: "-100vw" });
+      textAnimation.start({ x: "100vw" });
     }
-    if (!titleInView) {
-      controls.start({ opacity: 1, x: "100vw" });
-      imgAnimation.start({
-        scale: 0.5,
-        opacity: 0.4,
-      });
-    }
-  }, [controls, imgAnimation, titleInView]);
-
-  useEffect(() => {
-    if (textInView) {
-      controls.start({
-        opacity: 1,
-        transition: { type: "spring", duration: 2 },
-      });
-    }
-    if (!textInView) {
-      controls.start({ opacity: 1, x: "100vw" });
-    }
-  }, [controls, textInView]);
+  }, [controls, imgAnimation, textAnimation, inView]);
 
   return (
-    <section className="aboutme" id="about">
+    <section className="aboutme" id="about" ref={ref}>
       <motion.h1
-        animate={imgAnimation}
-        ref={titleRef}
+        animate={controls}
         initial={{ scale: 0.6, opacity: 0.5 }}
         className="aboutme_title"
       >
@@ -57,14 +46,13 @@ const About = () => {
         <motion.div
           className="aboutme_img"
           animate={imgAnimation}
-          initial={{ scale: 0.6, opacity: 0.5 }}
+          initial={{ x: "-100vw" }}
         ></motion.div>
         <div className="aboutme_text">
           <motion.p
             className="aboutme_description"
-            ref={textRef}
-            initial={{ opacity: 1, x: "100vw" }}
-            animate={controls}
+            initial={{ x: "100vw" }}
+            animate={textAnimation}
           >
             I'm a frontend web developer. I'm a Computer Science undergraduate
             at IIIT Sonipat. I invite you to explore my projects and
@@ -72,13 +60,13 @@ const About = () => {
             journey. Thank you for visiting, and enjoy your exploration!
           </motion.p>
           <motion.button
-            initial={{ opacity: 1, x: "100vw" }}
-            animate={controls}
+            initial={{ x: "100vw" }}
+            animate={textAnimation}
             className="aboutme_cv"
             whileHover={{
-              scale:1.1,
-              textShadow:"0px 0px 8px rgb(255,255,255)",
-              cursor:"pointer"
+              scale: 1.1,
+              textShadow: "0px 0px 8px rgb(255,255,255)",
+              cursor: "pointer",
             }}
           >
             Download CV
