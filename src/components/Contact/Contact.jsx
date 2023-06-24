@@ -46,6 +46,7 @@ const Contact = (props) => {
       </motion.h1>
       <div className="contact_content">
         <div className="contact_left">
+          <a href="mailto:work.abhyuday@gmail.com">
           <motion.div
             className="email"
             animate={divAnimation}
@@ -56,6 +57,8 @@ const Contact = (props) => {
             </div>
             <h4>work.abhyuday@gmail.com</h4>
           </motion.div>
+          </a>
+          <a href="https://www.linkedin.com/in/abhyuday-751792229/" target="_blank">
           <motion.div
             className="email"
             animate={divAnimation}
@@ -66,7 +69,8 @@ const Contact = (props) => {
             </div>
             <h4>Abhyuday</h4>
           </motion.div>
-          <motion.div
+          </a>
+         <a href="https://twitter.com/Awwwbhyuday" target="_blank"> <motion.div
             className="email"
             animate={divAnimation}
             whileHover={{ scale: 1.1, backgroundColor: "#f6f6f6" }}
@@ -75,7 +79,7 @@ const Contact = (props) => {
               <GrTwitter />
             </div>
             <h4>@Awwwbhyuday</h4>
-          </motion.div>
+          </motion.div></a>
         </div>
         <motion.div animate={textAnimation} className="send-btn ">
           <div className="send_content">

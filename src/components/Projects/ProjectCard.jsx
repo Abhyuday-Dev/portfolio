@@ -1,14 +1,15 @@
 import React from 'react';
 import "./ProjectCard.css";
 
-const ProjectCard = () => {
+const ProjectCard = ({name,src,description}) => {
   return (
     <div className='p_card'>
-        <div className="p_img">
+        <div className="p_img" >
+          <img src={src} alt="" />
         </div>
         <div className="p_content">
-            <h2>Project Name</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, quidem.</p>
+            <h2>{name}</h2>
+            <p>{description}</p>
             <div className="p_btn">
                 <button className='p_button'>Demo</button>
                 <button className='p_button'>Code</button>

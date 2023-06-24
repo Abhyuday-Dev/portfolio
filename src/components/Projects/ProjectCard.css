@@ -1,15 +1,15 @@
 .p_card{
-    background-color: #f6f6f6;
+    background-color: #fff;
     width: 320px;
     height: 420px;
     display: flex;
     align-items: center;
     flex-direction: column;
     border-radius: 20px;
-    padding: 15px;
+    padding: 1.5rem ;
     position: relative;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-    transition: all 0.6s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .p_card:hover{
@@ -17,18 +17,16 @@
     background-color: #f6f6f6;
 }
 .p_content{
-    padding: 1rem;
+    padding: 0.5rem 1.2rem;
     gap: 2px;
 }
 
-.p_img{
+.p_img img{
     width: 100%;
-    height: 250px;
-    background-image: url("../../assets/test.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
+    height: 200px;
+    margin-bottom: 10px;
+    object-position: center;
+    object-fit: cover;
 }
 
 
@@ -42,9 +40,14 @@
 .p_card:hover p {
     display: none;
 }
+.p_content h2{
+    font-weight: 600;
+}
 
 .p_content p{
     color: #afacac;
+    font-size:14px;
+    margin-top: 5px;
 }
 
 .p_btn{

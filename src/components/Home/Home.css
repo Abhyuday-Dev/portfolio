@@ -47,21 +47,16 @@
 
 .home_social a {
   font-size: 2rem;
-  color: black;
-  opacity: 0; /* Set the initial opacity to 0 */
-  animation: fade-in 2s forwards; /* Apply the fade-in animation */
+  color: black; /* Apply the fade-in animation */
 }
 .home_social a:hover {
   color: rgb(216, 213, 213);
-  transition: 0.5s ease-in;
+  transition: 0.1s ease-in;
 }
 
 .home__title {
   font-size: 4rem;
   margin-bottom: 0.25rem;
-  transition: 0.5s ease-in;
-  opacity: 0; /* Set the initial opacity to 0 */
-  animation: fade-in 1.5s forwards; /* Apply the fade-in animation */
 }
 
 @keyframes fade-in {
@@ -79,22 +74,16 @@
   margin-left: 0.6rem;
   width: 45px;
   height: 45px;
-  opacity: 0; /* Set the initial opacity to 0 */
-  animation: fade-in 1s forwards; /* Apply the fade-in animation */
 }
 
 .home__subtitle {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  opacity: 0; /* Set the initial opacity to 0 */
-  animation: fade-in 1s forwards; /* Apply the fade-in animation */
 }
 
 .home__description {
   max-width: 400px;
   margin-bottom: 1rem;
-  opacity: 0; /* Set the initial opacity to 0 */
-  animation: fade-in 1s forwards; /* Apply the fade-in animation */
 }
 
 .home__button{
@@ -107,9 +96,7 @@
   width: 180px;
   height: 50px;
   color: white;
-  border-radius: 20px;
-  opacity: 0; /* Set the initial opacity to 0 */
-  animation: fade-in 1s forwards; /* Apply the fade-in animation */
+  border-radius: 30px;
 }
 
 .home__button a{
