@@ -1,39 +1,40 @@
-import React,{useEffect} from "react";
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Data = () => {
-
   const headingAnimation = useAnimation();
   const contentAnimation = useAnimation();
   const [ref, inView] = useInView();
 
-  useEffect(()=>{
-    if(inView){
+  useEffect(() => {
+    if (inView) {
       headingAnimation.start({
-        opacity:1,
-        y:0,
-        transition:{duration:2,type:"spring",delay:1}
-      })
+        opacity: 1,
+        y: 0,
+        transition: { duration: 2, type: "spring", delay: 1 },
+      });
       contentAnimation.start({
-        opacity:1,
-        transition:{duration:2,type:"spring",delay:2}
-      })
-    }
-    else{
+        opacity: 1,
+        transition: { duration: 1, type: "spring", delay: 2 },
+      });
+    } else {
       headingAnimation.start({
-        opacity:0,
-        y:"5vh"
-      })
+        opacity: 0,
+        y: "5vh",
+      });
       contentAnimation.start({
-        opacity:0,
-      })
+        opacity: 0,
+      });
     }
-  },[inView,headingAnimation])
+  }, [inView, headingAnimation]);
   return (
     <motion.div className="home__data" ref={ref}>
-      <motion.h1 className="home__title" animate={headingAnimation} initial={{opacity:0,
-        y:"5vh"}}>
+      <motion.h1
+        className="home__title"
+        animate={headingAnimation}
+        initial={{ opacity: 0, y: "5vh" }}
+      >
         Abhyuday
         <svg
           width="36"
@@ -85,8 +86,18 @@ const Data = () => {
           ></path>
         </svg>
       </motion.h1>
-      <motion.h3 className="home__subtitle" animate={contentAnimation} >Frontend Developer</motion.h3>
-      <motion.p className="home__description" animate={contentAnimation} >
+      <motion.h3
+        className="home__subtitle"
+        animate={contentAnimation}
+        initial={{ opacity: 0 }}
+      >
+        Frontend Developer
+      </motion.h3>
+      <motion.p
+        className="home__description"
+        initial={{ opacity: 0 }}
+        animate={contentAnimation}
+      >
         I'm a Frontend Web developer based in New Delhi,and I'm very passionate
         and creative about my work.
       </motion.p>
@@ -94,6 +105,7 @@ const Data = () => {
       <motion.div
         className="home__button"
         animate={contentAnimation}
+        initial={{ opacity: 0 }}
         whileHover={{
           scale: 1.1,
           textShadow: "0px 0px 8px rgb(255,255,255)",
