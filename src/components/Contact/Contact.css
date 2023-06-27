@@ -288,7 +288,7 @@ input[type="submit"] {
 
   
   
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 360px) {
     .contact_content{
         align-items: center;
         justify-content: center;
