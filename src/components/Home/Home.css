@@ -271,10 +271,10 @@
     display: none;
   }
   .home__button{
-    font-size: 1rem;
-    width: 150px;
+    font-size: 0.8rem;
+    width: 160px;
   }
   .home_social{
-    margin-top: 15px;
+    margin-top: 10px;
   }
 }
