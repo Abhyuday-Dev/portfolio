@@ -123,7 +123,7 @@
 @media screen and (max-width:822px){
 
   .home__content{
-    height: 100vh;
+    height: 95vh;
   }
   .home__content {
     display: flex;
@@ -211,7 +211,7 @@
 
 @media screen and (max-width: 576px) {
   .home__content{
-    height: 90vh;
+    height: 89vh;
     padding-top: 2rem;
   }
   .home__title {
