@@ -211,7 +211,7 @@
 
 @media screen and (max-width: 576px) {
   .home__content{
-    height: 89vh;
+    height: 87.8vh;
     padding-top: 2rem;
   }
   .home__title {
@@ -222,7 +222,7 @@
     height: 250px;
   }
   .home_social {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .home__button{
     font-size: 1.2rem;
@@ -235,7 +235,7 @@
     display: none;
   }
   .home_social{
-    margin-top: 30px;
+    margin-top: 20px;
   }
   @keyframes fade-in {
     0% {
@@ -273,5 +273,8 @@
   .home__button{
     font-size: 1rem;
     width: 150px;
+  }
+  .home_social{
+    margin-top: 20px;
   }
 }
