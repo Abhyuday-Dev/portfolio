@@ -49,7 +49,7 @@ const Skills = () => {
   }, [containerAnimation, imgAnimation, titleInView]);
 
   return (
-    <section className="skills" id="skills" ref={titleRef}>
+    <motion.section className="skills" id="skills" ref={titleRef}>
       <motion.h1
         className="skills_title"
         animate={imgAnimation}
@@ -72,7 +72,7 @@ const Skills = () => {
           ))}
         </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -1,4 +1,4 @@
-.p_card{
+.p_card {
     background-color: #fff;
     width: 320px;
     height: 420px;
@@ -6,146 +6,154 @@
     align-items: center;
     flex-direction: column;
     border-radius: 20px;
-    padding: 1.5rem ;
+    padding: 1.5rem;
     position: relative;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
     transition: all 0.5s ease-in-out;
-}
-
-.p_card:hover{
+  }
+  
+  .p_card:hover {
     transform: translateY(20px);
     background-color: #f6f6f6;
-}
-.p_content{
-    padding: 0.5rem 1.2rem;
-    gap: 2px;
-}
-
-.p_img img{
+  }
+  
+  .p_img img {
     width: 100%;
     height: 200px;
     margin-bottom: 10px;
     object-position: center;
     object-fit: cover;
-}
-
-
-.p_card:hover .p_btn{
+  }
+  
+  .p_card:hover .p_btn {
     display: flex;
-}
-.p_card:hover h2 {
+  }
+  
+  .p_card:hover h2,
+  .p_card:hover p {
     display: none;
-}
-
-.p_card:hover p {
-    display: none;
-}
-.p_content h2{
+  }
+  
+  .p_content {
+    padding: 0.5rem 1.2rem;
+    gap: 2px;
+  }
+  
+  .p_content h2 {
     font-weight: 600;
-}
-
-.p_content p{
+  }
+  
+  .p_content p {
     color: #afacac;
-    font-size:14px;
+    font-size: 14px;
     margin-top: 5px;
-}
-
-.p_btn{
+  }
+  
+  .p_btn {
     display: none;
     gap: 10px;
     position: absolute;
     bottom: 15%;
     left: 24%;
     transition: all 1s ease-in;
-}
-
-.p_button{
+  }
+  
+  .p_button {
     font-size: 1.1rem;
     padding: 0.4rem 0.8rem;
     border: none;
     background-color: #d6d6d6;
     color: black;
     transition: all 0.5s ease-in;
-}
-
-@media screen and (max-width: 1000px) {
-    .p_card{
-        background-color: #fff;
-        width: 260px;
-        height: 350px;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .p_card {
+      width: 260px;
+      height: 350px;
     }
-
-    .p_content h2{
-        font-size: 1.2rem;
+  
+    .p_content h2 {
+      font-size: 1.2rem;
     }
-    .p_content p{
-        font-size: 0.8rem;
+    .p_content p {
+      font-size: 0.8rem;
     }
-}
-@media screen and (max-width:822px){
-    .p_card{
-        width: 390px;
-        height: 340px;
-        margin: 10px;
+  }
+  
+  @media screen and (max-width: 822px) {
+    .p_card {
+      width: 390px;
+      height: 340px;
+      margin: 10px;
     }
-}
-
-@media screen and (max-width: 768px) {
-    
-    .p_card{
-        width: 360px;
-        height: 400px;
-        margin: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .p_card {
+      width: 360px;
+      height: 400px;
+      margin: 10px;
     }
-    .p_btn{
-        display: flex;
-        gap: 10px;
-        position: absolute;
-        bottom: 12px;
-        left: 30px;
-        transition: all 1s ease-in;
+    .p_btn {
+      bottom: 12px;
+      left: 30px;
     }
-    .p_button{
-        font-size: 0.8rem;
-        padding: 0.4rem 0.8rem;
-        border: none;
-        
-        transition: all 0.5s ease-in;
+    .p_button {
+      font-size: 0.8rem;
+      padding: 0.4rem 0.8rem;
     }
-    
-}
-
-
-@media screen and (max-width: 480px){
-    .p_card{
-        margin-bottom: 20px;
-        width: 280px;
-        height: 370px;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .p_card {
+      margin-bottom: 20px;
+      width: 280px;
+      height: 370px;
     }
-    .p_btn{
-        display: flex;
-        gap: 10px;
-        position: absolute;
-        bottom: 8px;
-        left: 30px;
-        transition: all 1s ease-in;
+    .p_btn {
+      bottom: 8px;
+      left: 30px;
     }
-    .p_button{
-        font-size: 0.6rem;
-        padding: 0.2rem 0.6rem;
-        border: none;
-    
-        transition: all 0.5s ease-in;
+    .p_button {
+      font-size: 0.6rem;
+      padding: 0.2rem 0.6rem;
     }
-    .p_content{
-        gap: 10px;
-        padding-bottom: 1.5rem;
+    .p_content {
+      gap: 10px;
+      padding-bottom: 1.5rem;
     }
-    .p_content h2{
-        font-size: 1.2rem;
+    .p_content h2 {
+      font-size: 1.2rem;
     }
-    .p_content p{
-        font-size: 0.6rem;
+    .p_content p {
+      font-size: 0.6rem;
     }
-    
-}
+  }
+  
+  @media screen and (max-width: 350px) {
+    .p_card {
+      width: 100%;
+      height: auto;
+      margin: 10px;
+      padding: 1rem;
+    }
+    .p_img img {
+      height: 150px;
+    }
+    .p_content h2 {
+      font-size: 1rem;
+    }
+    .p_content p {
+      font-size: 0.6rem;
+    }
+    .p_btn {
+      bottom: 8px;
+      left: 20px;
+    }
+    .p_button {
+      font-size: 0.6rem;
+      padding: 0.2rem 0.6rem;
+    }
+  }
+  
