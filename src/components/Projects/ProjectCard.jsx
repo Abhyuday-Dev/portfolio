@@ -10,11 +10,11 @@ const ProjectCard = ({name,src,description}) => {
         <div className="p_content">
             <h2>{name}</h2>
             <p>{description}</p>
-            <div className="p_btn">
+        </div>
+        <div className="p_btn">
                 <button className='p_button'>Demo</button>
                 <button className='p_button'>Code</button>
             </div>
-        </div>
     </div>
   )
 }
