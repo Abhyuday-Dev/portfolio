@@ -54,10 +54,12 @@ const About = () => {
             initial={{ x: "100vw" }}
             animate={textAnimation}
           >
-            I'm a frontend web developer. I'm a Computer Science undergraduate
-            at IIIT Sonipat. I invite you to explore my projects and
-            experiences, and I hope you find inspiration and insight into my
-            journey. Thank you for visiting, and enjoy your exploration!
+            I am Abhyuday, a Computer Science undergraduate student at IIIT
+            Sonepat. With a strong passion for frontend development and
+            expertise in React, I specialize in crafting visually captivating
+            and user-friendly web interfaces. I am actively seeking
+            opportunities as a frontend developer to continue refining my skills
+            and contribute to exciting projects.
           </motion.p>
           <motion.button
             initial={{ x: "100vw" }}

@@ -10,19 +10,25 @@ const ProjectInfo=[
     key:1,
     name:"Weather App",
     description:"A React.js weather web app using OpenWeatherMap API: Get real-time weather information with a responsive and intuitive interface.",
-    src:"https://cdn.icon-icons.com/icons2/1514/PNG/512/cloudyraindayweathersymbol_104974.png"
+    src:"https://cdn.icon-icons.com/icons2/1514/PNG/512/cloudyraindayweathersymbol_104974.png",
+    github:"https://github.com/Abhyuday-Dev/weather",
+    site:"https://abhyudayweatherapp.netlify.app/"
   },
   {
     key:2,
     name:"DALL-E Clone",
     description:"DALL-E is an advanced AI model developed by OpenAI that generates images from textual descriptions.",
-    src:"https://www.magnolia-cms.com/dam/jcr:606b86b7-cb7b-48d3-8325-741d0c212162/openai-logo-black_transparent.png"
+    src:"https://www.magnolia-cms.com/dam/jcr:606b86b7-cb7b-48d3-8325-741d0c212162/openai-logo-black_transparent.png",
+    github:"https://github.com/Abhyuday-Dev/weather",
+    site:"https://abhyudayweatherapp.netlify.app/"
   },
   {
     key:3,
     name:"Expense Tracker",
     description:"An expense tracker developed using React.js provides users with a practical tool to monitor their financial activities",
-    src:"https://cdn-icons-png.flaticon.com/512/3176/3176833.png"
+    src:"https://cdn-icons-png.flaticon.com/512/3176/3176833.png",
+    github:"https://github.com/Abhyuday-Dev/weather",
+    site:"https://abhyudayweatherapp.netlify.app/"
   },
 ]
 
@@ -61,7 +67,8 @@ const Project = () => {
         >Projects</motion.h1>
       <motion.div className="p_div" animate={controls} >
       {ProjectInfo.map((item)=>{
-        return <ProjectCard name={item.name} src={item.src} description={item.description} />
+        return <ProjectCard name={item.name} src={item.src} description={item.description}
+        github={item.github} key={item.key} site={item.site} />
       })}
       </motion.div>
     </section>

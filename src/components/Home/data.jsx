@@ -98,8 +98,7 @@ const Data = () => {
         initial={{ opacity: 0 }}
         animate={contentAnimation}
       >
-        I'm a Frontend Web developer based in New Delhi,and I'm very passionate
-        and creative about my work.
+        Hi, I'm a Frontend Web Developer based in New Delhi,India.I invite you to explore my projects and experiences.
       </motion.p>
 
       <motion.div
