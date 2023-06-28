@@ -76,16 +76,17 @@
 
 @media screen and (max-width: 1000px) {
   .p_card {
-    max-width: 260px;
-    height: 350px;
+    max-width: 280px;
+    height: 400px;
+    margin: 10px;
   }
 
   .p_content h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .p_content p {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 }
 
@@ -130,14 +131,11 @@
     height: 220px;
   }
 
-  .p_btn {
-    bottom: 12px;
-    left: 30px;
+  .p_content h2{
+    font-size: 1.4rem;
   }
-
-  .p_button {
+  .p_content p{
     font-size: 0.8rem;
-    padding: 0.4rem 0.8rem;
   }
 }
 
@@ -151,11 +149,6 @@
   .p_img img {
     height: 180px;
   }
-
-  
-
-  
-
   .p_content {
     gap: 10px;
     padding-bottom: 1.5rem;
