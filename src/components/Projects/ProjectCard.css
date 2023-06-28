@@ -317,12 +317,20 @@
     height: 370px;
   }
 
+  .p_img img {
+    width: 180;
+    height: 180px;
+    margin-bottom: 10px;
+    object-position: center;
+    object-fit: cover;
+  }
+
   .p_btn {
     display: flex;
     gap: 10px;
     position: absolute;
-    bottom: 8px;
-    left: 30px;
+    bottom: 5%;
+    left: 30%;
     transition: all 1s ease-in;
   }
 
@@ -336,6 +344,7 @@
   .p_content {
     gap: 10px;
     padding-bottom: 1.5rem;
+    text-align: center;
   }
 
   .p_content h2 {
