@@ -106,6 +106,16 @@
   .p_content h2{
     font-size: 0.8rem;
   }
+  .p_card:hover {
+    transform: none;
+  }
+  .p_card:hover .p_btn {
+    display: none;
+  }
+  .p_card:hover h2,
+  .p_card:hover p {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 768px) {

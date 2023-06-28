@@ -2,8 +2,16 @@ import React from 'react';
 import "./ProjectCard.css";
 
 const ProjectCard = ({name,src,description}) => {
+  const openLink = () => {
+    if (window.innerWidth < 823) {
+      const url = 'https://www.google.com'; // Replace with your desired URL
+      window.open(url, '_blank');
+    }
+  };
+
+  
   return (
-    <div className='p_card'>
+    <div className='p_card' onClick={openLink}>
         <div className="p_img" >
           <img src={src} alt="" />
         </div>
