@@ -136,10 +136,12 @@
       .aboutme_img{
         width: 400px;
         height: 400px;
+        margin-bottom: 15px;
       }
       .aboutme_text{
         width: 400px;
         height: 400px;
+        margin-bottom: 10px;
        }
        .aboutme_description{
         font-size: 1.1rem;
