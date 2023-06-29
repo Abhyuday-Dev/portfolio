@@ -19,16 +19,16 @@ const ProjectInfo=[
     name:"DALL-E Clone",
     description:"DALL-E is an advanced AI model developed by OpenAI that generates images from textual descriptions.",
     src:"https://www.magnolia-cms.com/dam/jcr:606b86b7-cb7b-48d3-8325-741d0c212162/openai-logo-black_transparent.png",
-    github:"https://github.com/Abhyuday-Dev/weather",
-    site:"https://abhyudayweatherapp.netlify.app/"
+    github:"https://github.com/Abhyuday-Dev/DALL-E-Clone",
+    site:"https://github.com/Abhyuday-Dev/DALL-E-Clone"
   },
   {
     key:3,
     name:"Expense Tracker",
     description:"An expense tracker developed using React.js provides users with a practical tool to monitor their financial activities",
     src:"https://cdn-icons-png.flaticon.com/512/3176/3176833.png",
-    github:"https://github.com/Abhyuday-Dev/weather",
-    site:"https://abhyudayweatherapp.netlify.app/"
+    github:"https://github.com/Abhyuday-Dev/Expense-Tracker",
+    site:"https://abhyudaysexpensetracker.vercel.app/"
   },
 ]
 

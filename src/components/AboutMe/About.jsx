@@ -2,12 +2,18 @@ import React, { useEffect } from "react";
 import "./About.css";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import CV from "../../assets/Resume.pdf";
 
 const About = () => {
   const controls = useAnimation();
   const imgAnimation = useAnimation();
   const textAnimation = useAnimation();
   const [ref, inView] = useInView();
+
+  const openResume=()=>{
+    const pdfUrl = "../../assets/Resume.pdf";
+    window.open(pdfUrl, '_blank');
+  }
 
   useEffect(() => {
     if (inView) {
@@ -61,7 +67,7 @@ const About = () => {
             opportunities as a frontend developer to continue refining my skills
             and contribute to exciting projects.
           </motion.p>
-          <motion.button
+          <a href={CV} target="_blank"><motion.button
             initial={{ x: "100vw" }}
             animate={textAnimation}
             className="aboutme_cv"
@@ -71,8 +77,8 @@ const About = () => {
               cursor: "pointer",
             }}
           >
-            Download CV
-          </motion.button>
+            Resume
+          </motion.button></a>
         </div>
       </div>
     </section>
