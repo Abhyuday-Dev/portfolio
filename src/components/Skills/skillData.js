@@ -48,7 +48,33 @@ const Data=[
         name:"Java",
         src:"https://i.pinimg.com/originals/79/5e/bb/795ebb5f4a470cd7242136237f61fc53.png",
         key:10
+    },
+    {
+        name:"NodeJs",
+        src:"https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_f0b606abb6d19089febc9faeeba5bc05/nodejs-development-services.png",
+        key:11
+    },
+    {
+        name:"Express",
+        src:"https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png",
+        key:12
+    },
+    {
+        name:"MongoDB",
+        src:"https://www.svgrepo.com/download/331488/mongodb.svg",
+        key:13
+    },
+    {
+        name:"Redux",
+        src:"https://cdn.iconscout.com/icon/free/png-256/free-redux-283024.png",
+        key:14
+    },
+    {
+        name:"Python",
+        src:"https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png",
+        key:15
     }
+    
 ];
 
 export default Data;

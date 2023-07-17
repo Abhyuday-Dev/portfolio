@@ -91,14 +91,14 @@ const Data = () => {
         animate={contentAnimation}
         initial={{ opacity: 0 }}
       >
-        Frontend Developer
+        FullStack Developer
       </motion.h3>
       <motion.p
         className="home__description"
         initial={{ opacity: 0 }}
         animate={contentAnimation}
       >
-        Hi, I'm a Frontend Web Developer based in New Delhi . I invite you to explore my projects and experiences.
+        Hi, I'm a FullStack Developer based in New Delhi . I invite you to explore my projects and experiences.
       </motion.p>
 
       <motion.div

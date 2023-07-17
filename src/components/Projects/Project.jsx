@@ -24,11 +24,11 @@ const ProjectInfo=[
   },
   {
     key:3,
-    name:"Expense Tracker",
-    description:"An expense tracker developed using React.js provides users with a practical tool to monitor their financial activities",
-    src:"https://cdn-icons-png.flaticon.com/512/3176/3176833.png",
-    github:"https://github.com/Abhyuday-Dev/Expense-Tracker",
-    site:"https://abhyudaysexpensetracker.vercel.app/"
+    name:"MERN-Book Store",
+    description:"A MERN bookstore with CRUD functionality offers seamless management of books, empowering users to create, read, update, and delete books.",
+    src:"https://cdn-icons-png.flaticon.com/512/29/29302.png",
+    github:"https://github.com/Abhyuday-Dev/MERN-Book-Store",
+    site:"https://abhyuday-bookstore.netlify.app/"
   },
 ]
 
