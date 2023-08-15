@@ -98,7 +98,7 @@ const Data = () => {
         initial={{ opacity: 0 }}
         animate={contentAnimation}
       >
-        Hi, I'm a FullStack Developer based in New Delhi . I invite you to explore my projects and experiences.
+        Hi, I'm a FullStack Developer based in New Delhi.<br/> I invite you to explore my projects and experiences.
       </motion.p>
 
       <motion.div

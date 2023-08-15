@@ -1,8 +1,8 @@
 import React,{useEffect} from 'react'
-import ProjectCard from './ProjectCard';
 import "./Project.css";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import ProjectShowCard from './ProjectShowCard';
 
 
 const ProjectInfo=[
@@ -10,23 +10,47 @@ const ProjectInfo=[
     key:1,
     name:"Weather App",
     description:"A React.js weather web app using OpenWeatherMap API: Get real-time weather information with a responsive and intuitive interface.",
-    src:"https://cdn.icon-icons.com/icons2/1514/PNG/512/cloudyraindayweathersymbol_104974.png",
+    src:"https://static.vecteezy.com/system/resources/previews/011/126/301/original/animated-cloud-with-sun-depicting-weather-in-flat-icon-clipart-illustration-on-blue-sky-vector.jpg",
     github:"https://github.com/Abhyuday-Dev/weather",
     site:"https://abhyudayweatherapp.netlify.app/"
   },
   {
     key:2,
-    name:"DALL-E Clone",
+    name:"Dahboard UI",   
+    description:"Responsive dashboard frontend:Data visualization, interactive charts, user-friendly interface, real-time insights, efficient data management.",
+    src:"https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/1282863/retina_1708x683_image_0_-_2020-10-19T234908.526-9473d815ad946c7c3a3f240534268049.png",
+    github:"https://github.com/Abhyuday-Dev/dashboard",
+    site:"https://abhyuday-dashboard.vercel.app/"
+  },
+  {
+    key:3,
+    name:"Task Manager",
+    description:"A MERN Task Manager with CRUD functionality offers seamless management of tasks, empowering users to create, read, update, and delete tasks.",
+    src:"https://media.istockphoto.com/id/1291339958/vector/project-management-concept-vector-illustration-business-team-working-together-with-project.jpg?s=170667a&w=0&k=20&c=geqgdXFWeKuf_sfKUWPEv33tX2F1wfyBdx8GXXxjVIo=",
+    github:"https://github.com/Abhyuday-Dev/Task-Mangangement",
+    site:"https://abhyuday-taskmanager.netlify.app/"
+  },
+  {
+    key:4,
+    name:"Redux Store",
+    description:"Redux-based eCommerce store: Add/delete items in cart with actions, reducers; centralized state management, seamless user experienc",
+    src:"https://assets-blog.hostgator.mx/wp-content/uploads/2017/09/blog-ecommerce-plataform.webp",
+    github:"https://github.com/Abhyuday-Dev/Redux-Store",
+    site:"https://redux-store-abhyuday.vercel.app/"
+  },
+  {
+    key:5,
+    name:"DALL-E",
     description:"DALL-E is an advanced AI model developed by OpenAI that generates images from textual descriptions.",
-    src:"https://www.magnolia-cms.com/dam/jcr:606b86b7-cb7b-48d3-8325-741d0c212162/openai-logo-black_transparent.png",
+    src:"https://theintercept.com/wp-content/uploads/2023/05/GettyImages-1252639606-pentagon-open-AI-chatGPT.jpg",
     github:"https://github.com/Abhyuday-Dev/DALL-E-Clone",
     site:"https://github.com/Abhyuday-Dev/DALL-E-Clone"
   },
   {
-    key:3,
-    name:"MERN-Book Store",
-    description:"A MERN bookstore with CRUD functionality offers seamless management of books, empowering users to create, read, update, and delete books.",
-    src:"https://cdn-icons-png.flaticon.com/512/29/29302.png",
+    key:6,
+    name:"MERN Book Store",
+    description:"A MERN Book Store with CRUD functionality offers seamless management of books, empowering users to create, read, update, and delete books",
+    src:"https://img.freepik.com/premium-vector/searching-educational-literature_118813-9147.jpg?w=2000",
     github:"https://github.com/Abhyuday-Dev/MERN-Book-Store",
     site:"https://abhyuday-bookstore.netlify.app/"
   },
@@ -67,7 +91,7 @@ const Project = () => {
         >Projects</motion.h1>
       <motion.div className="p_div" animate={controls} >
       {ProjectInfo.map((item)=>{
-        return <ProjectCard name={item.name} src={item.src} description={item.description}
+        return <ProjectShowCard name={item.name} src={item.src} description={item.description}
         github={item.github} key={item.key} site={item.site} />
       })}
       </motion.div>
