@@ -45,7 +45,7 @@ const Social = () => {
       <motion.a href="" className="home_social-icon" whileHover={{scale:1.2}} target="_blank" variants={item}>
         <BsInstagram />
       </motion.a>
-      <motion.a href="https://twitter.com/Awwwbhyuday" whileHover={{scale:1.2}} className="home_social-icon" target="_blank" variants={item}>
+      <motion.a href="https://twitter.com/Awwbhyuday" whileHover={{scale:1.2}} className="home_social-icon" target="_blank" variants={item}>
         <FiTwitter />
       </motion.a>
       <motion.a href="https://github.com/Abhyuday-Dev" whileHover={{scale:1.2}} className="home_social-icon" target="_blank" variants={item}>

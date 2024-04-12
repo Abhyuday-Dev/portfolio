@@ -70,7 +70,7 @@ const Contact = (props) => {
             <h4>Abhyuday</h4>
           </motion.div>
           </a>
-         <a href="https://twitter.com/Awwwbhyuday" target="_blank"> <motion.div
+         <a href="https://twitter.com/Awwbhyuday" target="_blank"> <motion.div
             className="email"
             animate={divAnimation}
             whileHover={{ scale: 1.1, backgroundColor: "#f6f6f6" }}
@@ -78,7 +78,7 @@ const Contact = (props) => {
             <div className="email_icon">
               <GrTwitter />
             </div>
-            <h4>@Awwwbhyuday</h4>
+            <h4>@Awwbhyuday</h4>
           </motion.div></a>
         </div>
         <motion.div animate={textAnimation} className="send-btn ">
