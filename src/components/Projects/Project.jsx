@@ -8,52 +8,29 @@ import ProjectShowCard from './ProjectShowCard';
 const ProjectInfo=[
   {
     key:1,
-    name:"Weather App",
+    name:"Testimonials",
     description:"A React.js weather web app using OpenWeatherMap API: Get real-time weather information with a responsive and intuitive interface.",
-    src:"https://static.vecteezy.com/system/resources/previews/011/126/301/original/animated-cloud-with-sun-depicting-weather-in-flat-icon-clipart-illustration-on-blue-sky-vector.jpg",
-    github:"https://github.com/Abhyuday-Dev/weather",
-    site:"https://abhyudayweatherapp.netlify.app/"
+    src:"https://www.aihr.com/wp-content/uploads/employee-testimonial-examples-cover.png",
+    github:"https://github.com/Abhyuday-Dev/testimonial",
+    site:"https://testimonials-abhyuday.vercel.app/"
   },
   {
     key:2,
-    name:"Dahboard UI",   
+    name:"Smart Forms",   
     description:"Responsive dashboard frontend:Data visualization, interactive charts, user-friendly interface, real-time insights, efficient data management.",
-    src:"https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/1282863/retina_1708x683_image_0_-_2020-10-19T234908.526-9473d815ad946c7c3a3f240534268049.png",
-    github:"https://github.com/Abhyuday-Dev/dashboard",
-    site:"https://abhyuday-dashboard.vercel.app/"
+    src:"https://strapi.vksapp.com/uploads/what_are_smart_forms_for_8e274b53d6.jpg",
+    github:"https://github.com/Abhyuday-Dev/smartforms",
+    site:"https://abhyuday-smartforms.vercel.app/"
   },
   {
     key:3,
-    name:"Task Manager",
+    name:"Picsa Gram",
     description:"A MERN Task Manager with CRUD functionality offers seamless management of tasks, empowering users to create, read, update, and delete tasks.",
-    src:"https://media.istockphoto.com/id/1291339958/vector/project-management-concept-vector-illustration-business-team-working-together-with-project.jpg?s=170667a&w=0&k=20&c=geqgdXFWeKuf_sfKUWPEv33tX2F1wfyBdx8GXXxjVIo=",
-    github:"https://github.com/Abhyuday-Dev/Task-Mangangement",
-    site:"https://abhyuday-taskmanager.netlify.app/"
+    src:"https://media.istockphoto.com/id/1223365194/vector/hands-with-smartphones.jpg?s=612x612&w=0&k=20&c=U882QpMsgzhMQS7TeUtwSYOGMbJFjUwQ9M8OodFrSkI=",
+    github:"https://github.com/Abhyuday-Dev/PicsaGram",
+    site:"https://photogram-cccec.web.app/"
   },
-  {
-    key:4,
-    name:"Redux Store",
-    description:"Redux-based eCommerce store: Add/delete items in cart with actions, reducers; centralized state management, seamless user experienc",
-    src:"https://assets-blog.hostgator.mx/wp-content/uploads/2017/09/blog-ecommerce-plataform.webp",
-    github:"https://github.com/Abhyuday-Dev/Redux-Store",
-    site:"https://redux-store-abhyuday.vercel.app/"
-  },
-  {
-    key:5,
-    name:"DALL-E",
-    description:"DALL-E is an advanced AI model developed by OpenAI that generates images from textual descriptions.",
-    src:"https://theintercept.com/wp-content/uploads/2023/05/GettyImages-1252639606-pentagon-open-AI-chatGPT.jpg",
-    github:"https://github.com/Abhyuday-Dev/DALL-E-Clone",
-    site:"https://github.com/Abhyuday-Dev/DALL-E-Clone"
-  },
-  {
-    key:6,
-    name:"MERN Book Store",
-    description:"A MERN Book Store with CRUD functionality offers seamless management of books, empowering users to create, read, update, and delete books",
-    src:"https://img.freepik.com/premium-vector/searching-educational-literature_118813-9147.jpg?w=2000",
-    github:"https://github.com/Abhyuday-Dev/MERN-Book-Store",
-    site:"https://abhyuday-bookstore.netlify.app/"
-  },
+
 ]
 
 const Project = () => {

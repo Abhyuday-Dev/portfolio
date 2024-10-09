@@ -15,8 +15,8 @@ const Data = [
     key: 3,
   },
   {
-    name: "C",
-    src: "https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg",
+    name: "TypeScript",
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png",
     key: 4,
   },
   {
@@ -80,14 +80,24 @@ const Data = [
     key: 16,
   },
   {
-    name: "TypeScript",
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png",
+    name: "Tailwind",
+    src: "https://w7.pngwing.com/pngs/293/485/png-transparent-tailwind-css-hd-logo.png",
     key: 17,
   },
   {
     name: "MUI",
     src: "https://mui.com/static/logo.png",
     key: 18,
+  },
+  {
+    name: "NextJs",
+    src: "https://static-00.iconduck.com/assets.00/nextjs-icon-512x512-y563b8iq.png",
+    key: 19,
+  },
+  {
+    name: "PostgreSQL",
+    src: "https://download.logo.wine/logo/PostgreSQL/PostgreSQL-Logo.wine.png",
+    key: 20,
   },
 ];
 
